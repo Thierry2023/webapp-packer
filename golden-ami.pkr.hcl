@@ -44,6 +44,6 @@ source "amazon-ebs" "golden-ami" {
 build {
   sources = ["source.amazon-ebs.golden-ami"]
   provisioner "shell" {
-    scripts = ["install_awscli.sh", "install_cloudwatch.sh", "install_ssm.sh"]
+    scripts = ["./install_awscli.sh", "./install_cloudwatch.sh", "./install_ssm.sh"]
   }
 }
